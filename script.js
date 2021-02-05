@@ -2,7 +2,7 @@ document.getElementById('search-btn').addEventListener('click', function (){
     const cityInput = document.getElementById('city-name-input').value;
     const InputCityName = document.getElementById('city-name')
 
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+cityInput+'&APPID=527707a6be4aa005ba83946ee2161c02')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput+'&APPID=527707a6be4aa005ba83946ee2161c02')
         .then(res => res.json())
         .then(data => {
             const cityName = data.name;
